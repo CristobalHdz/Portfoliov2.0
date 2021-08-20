@@ -104,14 +104,17 @@ color:rgb(163, 163, 255)
     margin-top: 0px;
 }
 
-#scheduler{
+#scheduler,
+#nutricipy{
     background-color:#6b6b6b ;
     border-radius: 10px;
     margin-bottom: 30px;
 }
 
 #gitSchedule,
-#webSchedule{
+#webSchedule,
+#gitNutricipy,
+#webNutricipy{
     width: 150px;
     height:50px;
     border-radius: 50px;
@@ -122,13 +125,17 @@ color:rgb(163, 163, 255)
 }
 
 #gitSchedule a,
-#webSchedule a{
+#webSchedule a,
+#gitNutricipy a,
+#webNutricipy a{
     color:white;
     font-style: none;
 }
 
-#gitSchedule button:hover,
-#webSchedule button:hover{
+#gitSchedule:hover,
+#webSchedule:hover,
+#gitNutricipy:hover,
+#webNutricipy:hover{
     background-color:#02cfbb;
 }
 
@@ -143,8 +150,9 @@ color:rgb(163, 163, 255)
     #sotoApp h1{
         font-size: 40px;
     }
-    #scheduler img{
-        width:80%;
+    #scheduler img,
+    #nutricipy img{
+        width: 60%px;
     }
 }
 
@@ -161,9 +169,6 @@ color:rgb(163, 163, 255)
     }
     #aboutMe img{
         margin-top:100px;
-    }
-    #scheduler img{
-        width:30%;
     }
 }
 
@@ -196,7 +201,8 @@ color:rgb(163, 163, 255)
     #nexumApp{
         margin-left:4%
     }
-    #scheduler img{
+    #scheduler img,
+    #nutricipy img{
         width:30%;
     }
 }
