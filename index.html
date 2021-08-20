@@ -14,22 +14,28 @@
 <body>
 
     <div class="row grey darken-3" id="navBarContainer">
-        <div class="col m8 l8 hide-on-small-only left-align" id="optionsContainer">
+        <div class="col m8 l6 hide-on-small-only left-align" id="optionsContainer">
             <button><a href="#aboutMe">About me</a></button>
             <button><a href="#Present-Projects">Present Projects</a></button>
             <button><a href="#experience">Experience</a></button>
-            <button><a href="#">Contact</a></button>
         </div>
-        <div class="col s12 m4 l4" id="logoContainer">
-            <a href="https://github.com/CristobalHdz" target="_blank" class="col s6 l2 offset-l5 center-align">
+        <div class="col s12 m4 l6" id="logoContainer">
+            <a href="https://github.com/CristobalHdz" target="_blank" class="col s4 l2 offset-l5 center-align">
                 <img src="assets/Images/GithubLogo.png" alt="GitHub Logo">
             </a>
             <a href="https://www.linkedin.com/in/cristobalhernandezch/" target="_blank"
-                class="col s6 l2 offset-l1 center-align">
+                class="col s4 m4 l2 center-align">
                 <img src="assets/Images/LinkedinLogo.png" alt="Linkedin Logo">
+            </a>
+            <a href="assets/CV Cristobal Hernandez.pdf" download
+                class="col s4 m4 l2 center-align">
+                <img src="assets/Images/CV-Download.png" alt="Download CV logo">
             </a>
         </div>
     </div>
+
+    
+        <a href="#navBarContainer"><button id="returnBtn" class="btn-floating btn-large waves-effect waves-light">︽</button> </a>
 
     <section class="row" id="aboutMe">
         <div class="col s12 center-align" id="aboutTitle">
@@ -56,6 +62,10 @@
                     e-documents, currently only working inside of Mexico; the second
                     project is a overhaul of Transportes Soto's website with its
                     databases.</p>
+                </br>
+                <h4>Contact Info.</h4>
+                <h5>Personal Email: <span class="info">cristobalhdzch@gmail.com</span></h5>
+                <h5>Job Email: <span class="info">cristobal.hernandez@ilumps.com</span></h5>
             </div>
         </div>
     </section>
@@ -103,7 +113,8 @@
         <div class="row" id="projectsCards">
             <div class="col s10 offset-s1 center-align" id="scheduler">
                 <h1>Work Day Schedule</h1>
-                <img class="col s10 offset-s1 offset-m1 l5 offset-l1" src="./assets/Images/Scheduler.png" alt="Scheduler show">
+                <img class="col s10 offset-s1 offset-m1 l5 offset-l1" src="./assets/Images/Scheduler.png"
+                    alt="Scheduler show">
                 <h3 class="col s10 offset-s1 l6">A day scheduler which depending on the hour it'll block from commenting
                     on past hours.</h3>
 
@@ -120,49 +131,23 @@
 
             <div class="col s10 offset-s1 center-align" id="nutricipy">
                 <h1>Nutricipy</h1>
-                <h3 class="col s10 offset-s1 l6">A webpage which based on your Body Mass Index(BMI), and personal eating
+                <h3 class="col s10 offset-s1 l6 offset-l1">A webpage which based on your Body Mass Index(BMI), and
+                    personal eating
                     prefferences, will select from different recipes from over the web.</h3>
-                    <img class="col s10 offset-s1 offset-m1 l5 offset-l1" src="assets/Images/Nutricipy.png" alt="Scheduler show">
-                    <div class="col s10 l10 offset-s1 offset-l2 offset-xl3" id="NutrConnect">
+                <img class="col s10 offset-s1 offset-m1 l5" src="assets/Images/Nutricipy.png" alt="Scheduler show">
+                <div class="col s10 l10 offset-s1 offset-l2 offset-xl3" id="NutrConnect">
 
-                        <button class="col s5 offset-s3 offset-m1 offset-l1" id="gitNutricipy"><a
-                                href="https://github.com/CristobalHdz/Nutricipy.git" target="_blank">Github
-                                page</a></button>
+                    <button class="col s5 offset-s3 offset-m1 offset-l1" id="gitNutricipy"><a
+                            href="https://github.com/CristobalHdz/Nutricipy.git" target="_blank">Github
+                            page</a></button>
 
-                        <button class="col s5 offset-s3" id="webNutricipy"><a
-                                href="https://cristobalhdz.github.io/Nutricipy/" target="_blank">Website</a></button>
-                    </div>
+                    <button class="col s5 offset-s3" id="webNutricipy"><a
+                            href="https://cristobalhdz.github.io/Nutricipy/" target="_blank">Website</a></button>
+                </div>
             </div>
         </div>
     </section>
 
-
-
-    <!--<section class="contact" id="Contact">
-        <h1>Contact me</h1>
-        <div class="contactContainer">
-            <form>
-
-                <label for="name">Name:</label>
-                <input type="text" id="fname" placeholder="Enter name here">
-
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email" placeholder="Enter email here">
-
-                <label for="phone">Phone Number:</label>
-                <input type="number" id="phone" name="phone" placeholder="Enter Phone">
-
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write the subject and any other comments you have"
-                    style="height:200px"></textarea>
-
-                <input type="submit" value="Submit" value="Send">
-            </form>
-        </div>
-    </section> -->
-
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 
