@@ -1,6 +1,18 @@
-*{
-    margin:0;
-    padding:0;
+:root {
+    --generalFontColor: #8BD9C7;
+    --backgroundColorOne: #373737;
+    --backgroundColorTwo: #59515E;
+    --hoverEffectShadow: inset 0 0 5px rgba(255, 255, 255, 0.075), 0 0 50px rgba(255, 255, 255, 0.6);
+    --languageCardBackground: linear-gradient(45deg, rgba(0,217,255,1) 21%, rgba(28,28,28,1) 87%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
 /* Navbar starts */
@@ -28,10 +40,10 @@ color:rgb(163, 163, 255)
 /* About me starts */
 
 #aboutMe{
-    margin-top: 0;
     background-color: #373737;
     height:fit-content;
     padding-bottom: 20px;
+    margin-bottom: 0;
 }
 
 #aboutMe img{
@@ -43,7 +55,83 @@ color:rgb(163, 163, 255)
 }
 /* About me ends */
 
+/* Projects begins */
+.presentProjects {
+    background-color: var(--backgroundColorTwo);
+    padding-top:20px;
+    padding-bottom: 30px;
+}
+
+#nexLogo,
+#sotoLogo {
+    width: 50px;
+}
+
+#nexumApp {
+    background-color: #08145c ;
+    margin-bottom: 20px;
+ }
+ 
+.nexButton{
+    background-color: #dc731b;
+    width: 150px;
+    height:50px;
+    border-radius: 50px;
+    font-size: 18px;
+    margin: 30px 0 5px 0;
+}
+ 
+.nexButton:hover{
+    background-color:orangered;
+    cursor: pointer;
+ }
+
+ #sotoApp{
+     background-color: seagreen;
+ }
+
+/* Present Projects Ends */
+
+/* Experience Begins */
+
 /* Mobile */
+#experience{
+    background-color: var(--backgroundColorOne);
+}
+
+#experience h1{
+    padding-top: 20px;
+    margin-top: 0px;
+}
+
+#scheduler{
+    background-color:#6b6b6b ;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#gitSchedule,
+#webSchedule{
+    width: 150px;
+    height:50px;
+    border-radius: 50px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    background-color:#00897b ;
+    margin-top:20px;
+}
+
+#gitSchedule a,
+#webSchedule a{
+    color:white;
+    font-style: none;
+}
+
+#gitSchedule button:hover,
+#webSchedule button:hover{
+    background-color:#02cfbb;
+}
+
 @media screen and (max-width:425px) {
     #aboutMe img{
         width:90%;
@@ -51,6 +139,12 @@ color:rgb(163, 163, 255)
     }
     #aboutMe p{
         font-size: 20px;
+    }
+    #sotoApp h1{
+        font-size: 40px;
+    }
+    #scheduler img{
+        width:80%;
     }
 }
 
@@ -64,11 +158,12 @@ color:rgb(163, 163, 255)
     }
     #aboutMe{
         height:fit-content;
-        padding-bottom: 20px;
     }
     #aboutMe img{
-        margin-top:70px;
-
+        margin-top:100px;
+    }
+    #scheduler img{
+        width:30%;
     }
 }
 
@@ -87,4 +182,41 @@ color:rgb(163, 163, 255)
         width:320px;
         margin-top:20px;
     }
+    #aboutMe{
+        padding-top: 20px;
+    }
+    
+    #nexumApp,
+    #sotoApp{
+        height:600px;
+    }
 }
+
+@media screen and (min-width:997px) { 
+    #nexumApp{
+        margin-left:4%
+    }
+    #scheduler img{
+        width:30%;
+    }
+}
+
+@media screen and (min-width:1339px) { 
+    #nexumApp,
+    #sotoApp{
+        height:560px;
+    }
+ }
+
+@media screen and (min-width:1382px) { 
+    #nexumApp,
+    #sotoApp{
+        height:500px;
+    }
+ }
+
+/* Experience Ends */
+
+/* Contact Section Begins */
+
+/* Contact Section Ends */

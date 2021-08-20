@@ -7,53 +7,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Portfolio</title>
 </head>
 
 <body>
+
     <div class="row grey darken-3" id="navBarContainer">
         <div class="col m8 l8 hide-on-small-only left-align" id="optionsContainer">
-            <button><a href="#aboutMe"></a>About me</button>
-            <button><a href="#"></a>Present Projects</button>
-            <button><a href="#"></a>Experience</button>
-            <button><a href="#"></a>Contact</button>
+            <button><a href="#aboutMe">About me</a></button>
+            <button><a href="#Present-Projects">Present Projects</a></button>
+            <button><a href="#experience">Experience</a></button>
+            <button><a href="#">Contact</a></button>
         </div>
         <div class="col s12 m4 l4" id="logoContainer">
-            <a href="#" class="col s6 l2 offset-l5 center-align">
-                <img src="./assets/GitLogo.png" alt="GitHub Logo">
+            <a href="https://github.com/CristobalHdz" target="_blank" class="col s6 l2 offset-l5 center-align">
+                <img src="assets/Images/GithubLogo.png" alt="GitHub Logo">
             </a>
-            <a href="#" class="col s6 l2 offset-l1 center-align">
-                <img src="./assets/LinkedinLogo.png" alt="Linkedin Logo">
+            <a href="https://www.linkedin.com/in/cristobalhernandezch/" target="_blank"
+                class="col s6 l2 offset-l1 center-align">
+                <img src="assets/Images/LinkedinLogo.png" alt="Linkedin Logo">
             </a>
         </div>
     </div>
 
-    <div class="row" id="aboutMe">
+    <section class="row" id="aboutMe">
         <div class="col s12 center-align" id="aboutTitle">
             <h1 class="teal-text darken-1">About me</h1>
             <h5 class="white-text"><b>A little something about myself</b></h5>
         </div>
-        <div class="col  white-text" id="aboutmeChild">
-            <img class="col s12 m5 l7 offset-l2" src="./assets/ProfilePhoto.png" alt="Profile Photo">
-            <h4 class="col s12 m6 l5 offset-m1 offset-l1 center-align">I'm a Junior Web Developer at Ilum Sherpass
-            </h4>
-            <p class="col s12 m6 l5  offset-m1 offset-l1 center-align">My name is Cristobal Hernandez. I studied
-                Industrial
-                engineering with
-                a minor in systems at Tecnologico de Monterrey in Monterrey.
-                During my studies I have worked at Heineken where my team and I
-                worked on an automatization of the warehouse's processes.
+        <div class="row  white-text" id="aboutmeChild">
+            <img class="col s12 m4 l4 xl6 offset-l1 offset-xl2" src="assets/Images/ProfilePhoto.png"
+                alt="Profile Photo">
+            <div class="col s12 m7 l7 xl6 center-align">
+                <h4>I'm a Junior Web Developer at Ilum
+                    Sherpass
+                </h4>
+                <p>My name is Cristobal Hernandez. I studied
+                    Industrial
+                    engineering with
+                    a minor in systems at Tecnologico de Monterrey in Monterrey.
+                    During my studies I have worked at Heineken where my team and I
+                    worked on an automatization of the warehouse's processes.
+                    </br>
+                    </br>
+                    I currently am working with Ilum Prosperity Sherpass in which
+                    I am helping with two projects. Nexum which is a way to sign
+                    e-documents, currently only working inside of Mexico; the second
+                    project is a overhaul of Transportes Soto's website with its
+                    databases.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="presentProjects" id="Present-Projects">
+        <h1 class="teal-text darken-1 center-align">My Present Projects</h1>
+        </br>
+        <h3 class="center-align">The projects I am currently working on</h3>
+        <div class="row">
+
+            <div class="col s10 m10 l5 offset-s1 offset-m1 center-align" id="nexumApp">
+                <h1><img src='./assets/images/NexumLogo.png' alt="Logo Nexum" id="nexLogo" />Nexum</h1>
+                <h2>A website in which you can sign your legal documents with your
+                    electronic device.
+                </h2>
+                <a href="https://nexumlegal.com.mx/" target="_blank">
+                    <button class="nexButton">Visit Nexum</button>
+                </a>
+                <p>
+                    Website in Spanish
+                </p>
+            </div>
+
+            <div class="col s10 m10 l5 offset-s1 offset-m1 offset-l1 center-align" id="sotoApp">
+                <h1><img src='./assets/images/TSotoLogo.png' alt="Logo Transportes Soto" id="sotoLogo" /> Transportes
+                    Soto </h1>
+                <h2>Remake of the main website, as well as their databases.</h2>
                 </br>
-                </br>
-                I currently am working with Ilum Prosperity Sherpass in which
-                I am helping with two projects. Nexum which is a way to sign
-                e-documents, currently only working inside of Mexico; the second
-                project is a overhaul of Transportes Soto's website with its
-                databases.</p>
+                <h4>
+                    The work is in progress and I am unable to share it to the public.
+                </h4>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="experience">
+        <div>
+            <h1 class="teal-text darken-1 center-align">My Present Projects</h1>
+            </br>
+            <h3 class="center-align">Past completed assignments</h3>
         </div>
 
-    </div>
+        <div class="row" id="projectsCards">
+            <div class="col s10 offset-s1 center-align" id="scheduler">
+                <h1>Work Day Schedule</h1>
+                <img class="col s10 offset-s1 l5 offset-l1" src="./assets/Images/Scheduler.png" alt="Scheduler show">
+                <h3 class="col s10 offset-s1 l6">A day scheduler which depending on the hour it'll block from commenting
+                    on past hours.</h3>
+
+                <div class="col s10 l10 offset-s1 offset-l2 offset-xl3" id="webConnect">
+
+                    <button class="col s5 offset-s3 offset-m1 offset-l1" id="gitSchedule"><a
+                            href="https://github.com/CristobalHdz/Schedule_5thWK.git" target="_blank">Github
+                            page</a></button>
+
+                    <button class="col s5 offset-s3" id="webSchedule"><a
+                            href="https://cristobalhdz.github.io/Schedule_5thWK/" target="_blank">Website</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--<section class="contact" id="Contact">
+        <h1>Contact me</h1>
+        <div class="contactContainer">
+            <form>
+
+                <label for="name">Name:</label>
+                <input type="text" id="fname" placeholder="Enter name here">
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter email here">
+
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="phone" placeholder="Enter Phone">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write the subject and any other comments you have"
+                    style="height:200px"></textarea>
+
+                <input type="submit" value="Submit" value="Send">
+            </form>
+        </div>
+    </section> -->
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
