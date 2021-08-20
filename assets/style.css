@@ -1,0 +1,40 @@
+#navBarContainer {
+    height: 100px;
+}
+
+#optionsContainer button{
+    background-color: transparent;
+    font-weight: bold;
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+
+#navBarContainer img{
+    height:60px;
+    margin-top:20px
+}
+
+/* Mobile */
+@media screen and (max-width:425px) {
+    
+}
+
+/* Tablet */
+@media screen and (max-width:768px) {  
+    #optionsContainer button{
+        font-size: 15px;
+        margin-top: 20px;
+        height:60px;
+    }
+}
+
+/* PC */
+@media screen and (min-width:769px) {  
+    #optionsContainer button{
+        font-size: 17px;
+        margin-top: 20px;
+        height:60px;
+        margin-left:20px;
+    }
+}
